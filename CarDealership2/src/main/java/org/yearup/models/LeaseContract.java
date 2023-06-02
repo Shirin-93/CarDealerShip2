@@ -26,7 +26,7 @@ public class LeaseContract extends Contract
     {
         double totalPrice = 0;
 
-        for(Vehicle vehicle = getVehicleSold())
+        for(Vehicle vehicle : getVehicleSold())
         {
             totalPrice += vehicle.getPrice();
         }
