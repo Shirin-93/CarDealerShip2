@@ -69,15 +69,5 @@ public class ContractFileManager
         }
         return contracts;
     }
-    public void fileAppend(String filePath, String newContent) throws IOException {
-        try(FileWriter writer = new FileWriter(filePath, true))
-        {
-            writer.write(newContent);
-            System.out.println("Append content "+ newContent);
-        }catch(IOException e)
-        {
-            throw new FileNotFoundException();
-        }
 
-    }
 }
